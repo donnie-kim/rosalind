@@ -14,17 +14,16 @@ def read_populations(filename):
     content = file.read().strip()
     populations = content.split()
     populations = [int(num) for num in populations]
-    # print(populations)
     return populations
 
 
 def expected_offspring(populations, n):
-    E1 = populations[0] * 1 * 2
-    E2 = populations[1] * 1 * 2
-    E3 = populations[2] * 1 * 2
-    E4 = populations[3] * 0.75 * 2
-    E5 = populations[4] * 0.50 * 2
-    E6 = populations[5] * 0 * 2
+    E1 = populations[0] * 1 * n
+    E2 = populations[1] * 1 * n
+    E3 = populations[2] * 1 * n
+    E4 = populations[3] * 0.75 * n
+    E5 = populations[4] * 0.50 * n
+    E6 = populations[5] * 0 * n
     total = E1 + E2 + E3 + E4 + E5 + E6
     return total
 
