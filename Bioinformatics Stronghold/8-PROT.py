@@ -1,3 +1,4 @@
+# Translating RNA into Protein
 from Bio.Seq import Seq
 
 mRNA = Seq(open("rosalind_prot.txt", "r").read().strip())

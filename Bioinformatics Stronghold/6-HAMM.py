@@ -1,3 +1,4 @@
+# Counting Point Mutations
 def point_mutations(s, t):
     hamming_distance = 0
     for i in range(len(s)):

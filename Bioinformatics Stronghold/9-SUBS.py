@@ -1,3 +1,4 @@
+# Finding a Motif in DNA
 def motif_counter(seq, sub):
     count = 0
     start = 0

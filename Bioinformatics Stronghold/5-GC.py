@@ -1,3 +1,4 @@
+# Computing GC Content
 from Bio import SeqIO
 
 max_gc = 0

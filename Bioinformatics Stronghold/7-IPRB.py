@@ -1,3 +1,4 @@
+# Mendel's First Law
 def dominance(k, m, n):
     total_individuals = k + m + n
 
