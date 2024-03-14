@@ -14,11 +14,17 @@ def get_sequences(file):
 
 
 def shared_motif(data):
+    # Initialize empty substring variable
     substr = ""
+    # Check for atleast 2 sequences in data and a non-empty first sequence
     if len(data) > 1 and len(data[0]) > 0:
+        # Iterate over indices of characters in data[0]
         for i in range(len(data[0])):
+            # Iterate over possible lengths of substrings starting from index i. Iterates from 0 to len-i
             for j in range(len(data[0]) - i + 1):
+                # Check if current substr (from index i to i+j) is present in all sequences x in the list
                 if j > len(substr) and all(data[0][i : i + j] in x for x in data):
+                    # If true, update substr
                     substr = data[0][i : i + j]
     return substr
 
